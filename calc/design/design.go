@@ -7,12 +7,12 @@ import (
 var _ = API("calc", func() {
 	Title("Calculator Service")
 	Description("Service for multiplying numbers, a Goa teaser")
-    Server("calc", func() {
-        Host("localhost", func() {
-            URI("http://localhost:8000")
-            URI("grpc://localhost:8080")
-        })
-    })
+	Server("calc", func() {
+		Host("localhost", func() {
+			URI("http://localhost:8000")
+			URI("grpc://localhost:8080")
+		})
+	})
 })
 
 var _ = Service("calc", func() {
